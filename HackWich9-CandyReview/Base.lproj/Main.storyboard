@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second Detail View Controller-->
+        <!--View Controller-->
         <scene sceneID="w3x-Up-5ef">
             <objects>
-                <viewController id="toA-AQ-S1e" customClass="secondDetailViewController" customModule="HackWich9_CandyReview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="toA-AQ-S1e" customClass="ViewController" customModule="HackWich9_CandyReview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u3L-8t-1o5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,7 +208,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="toA-AQ-S1e" kind="show" identifier="mySegue" id="pNx-u5-obZ"/>
+                                            <segue destination="toA-AQ-S1e" kind="show" identifier="mySegue" id="f8A-qK-bUT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -224,7 +224,7 @@
                     <navigationItem key="navigationItem" id="d27-LU-wWY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="wMb-sC-NGC" id="Tay-uI-7cU"/>
+                        <outlet property="tableView" destination="wMb-sC-NGC" id="9Ck-cT-TPl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCS-vs-GsH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

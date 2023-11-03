@@ -4,14 +4,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     var candyArray = ["Reese's Peanut Butter Cup", "Kit Kat", "Butterfingers", "Chocolate & Nut M&M"]
     var ratingArray = ["⭐️⭐️⭐️⭐️⭐️", "⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️⭐️"]
-    var categoryOneImagesData = ["image1", "image2", "image3", "image4"]
-   
+
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-       //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        // Register the cell for the table view using a prototype cell from the storyboard
+       // tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         //tableView.delegate = self
         //tableView.dataSource = self
     }
@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = candyArray[indexPath.row]
+        cell.detailTextLabel?.text = ratingArray[indexPath.row]
         return cell
     }
 
@@ -31,5 +32,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         performSegue(withIdentifier: "mySegue", sender: self)
     }
 
-   
+    
 }
