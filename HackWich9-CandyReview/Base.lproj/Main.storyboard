@@ -26,7 +26,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fts-e3-eqT"/>
                     <connections>
-                        <outlet property="imageView" destination="lxM-qH-Oc8" id="EGD-0P-cdV"/>
+                        <outlet property="imageView" destination="lxM-qH-Oc8" id="Iep-Tf-f0K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3iF-wm-gJg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -60,7 +60,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Learn More"/>
                                 <connections>
-                                    <action selector="learnMorePress:" destination="uzZ-Ts-yyH" eventType="touchUpInside" id="Z8E-3P-Kf4"/>
                                     <segue destination="Ox7-0M-PPa" kind="show" id="sCv-FV-Zo0"/>
                                 </connections>
                             </button>
@@ -156,7 +155,6 @@
         <!--Home-->
         <scene sceneID="u73-by-8Zj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M2c-iB-g8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y1P-2j-NVo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="MbS-HG-4uj"/>
                     <toolbarItems/>
@@ -169,13 +167,14 @@
                         <segue destination="uzZ-Ts-yyH" kind="relationship" relationship="rootViewController" id="M1i-3g-O1Y"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2c-iB-g8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-141.22137404580153" y="-289.43661971830988"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ndw-YF-wJP">
             <objects>
-                <viewController id="zT9-Fi-QsU" customClass="ViewController" customModule="HackWich6" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zT9-Fi-QsU" customClass="ViewController" customModule="HackWich9_CandyReview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Toi-fY-ghF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +224,7 @@
                     <navigationItem key="navigationItem" id="d27-LU-wWY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="wMb-sC-NGC" id="HWu-Jj-8ji"/>
+                        <outlet property="tableView" destination="wMb-sC-NGC" id="Tay-uI-7cU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCS-vs-GsH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

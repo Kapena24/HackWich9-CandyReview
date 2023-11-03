@@ -1,24 +1,17 @@
-//
-//  secondDetailViewController.swift
-//  HackWich9-CandyReview
-//
-//  Created by Kapena Kaaihue on 11/2/23.
-//
-
 import UIKit
 
-class secondDetailViewController: UIViewController{
+class SecondDetailViewController: UIViewController {
     
-   
+    var imagePass: String? // Declare a property to hold the image data
+    
     @IBOutlet weak var imageView: UIImageView!
-    var imagePass: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Check if there is image data to display
         if let imageName = imagePass {
             imageView.image = UIImage(named: imageName)
         }
     }
-    
 }
