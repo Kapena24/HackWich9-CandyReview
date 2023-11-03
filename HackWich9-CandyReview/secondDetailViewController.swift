@@ -9,14 +9,16 @@ import UIKit
 
 class secondDetailViewController: UIViewController{
     
-    var imagePass: String?
+   
     @IBOutlet weak var imageView: UIImageView!
+    var imagePass: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-    
+        
+        if let imageName = imagePass {
+            imageView.image = UIImage(named: imageName)
+        }
     }
-
     
 }

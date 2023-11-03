@@ -49,12 +49,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDm-aH-gaW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-141.22137404580153" y="367.6056338028169"/>
+            <point key="canvasLocation" x="-141" y="473"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Second Detail View Controller-->
         <scene sceneID="w3x-Up-5ef">
             <objects>
-                <viewController id="toA-AQ-S1e" customClass="UITableViewController" sceneMemberID="viewController">
+                <viewController id="toA-AQ-S1e" customClass="secondDetailViewController" customModule="HackWich9_CandyReview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u3L-8t-1o5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,12 +69,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fts-e3-eqT"/>
                     <connections>
-                        <outlet property="imageView" destination="lxM-qH-Oc8" id="hW7-oM-X06"/>
+                        <outlet property="imageView" destination="lxM-qH-Oc8" id="EGD-0P-cdV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3iF-wm-gJg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="368"/>
+            <point key="canvasLocation" x="723" y="473"/>
         </scene>
         <!--Home-->
         <scene sceneID="cxF-Rw-ZpX">
