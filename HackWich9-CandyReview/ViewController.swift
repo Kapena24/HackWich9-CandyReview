@@ -29,6 +29,8 @@ class ViewController: UIViewController{
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
+    @IBAction func learnMorePress(_ sender: UIButton) {
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mySegue"
         {
