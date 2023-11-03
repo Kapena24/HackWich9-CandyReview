@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "halloween_candy_iphone_wallpaper_by_sailortrekkie92_dgbhqv2-375w-2x.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
