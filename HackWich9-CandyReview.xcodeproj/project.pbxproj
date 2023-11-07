@@ -15,6 +15,8 @@
 		318410922AF4CFCE002954E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318410902AF4CFCE002954E7 /* LaunchScreen.storyboard */; };
 		3184109A2AF4DC4A002954E7 /* secondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318410992AF4DC4A002954E7 /* secondDetailViewController.swift */; };
 		3184109C2AF4DFEB002954E7 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3184109B2AF4DFEB002954E7 /* Property List.plist */; };
+		31DD54EE2AFABCD30034A742 /* tab3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DD54ED2AFABCD30034A742 /* tab3VC.swift */; };
+		31DD54F02AFAC5D60034A742 /* tab4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DD54EF2AFAC5D60034A742 /* tab4VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		318410932AF4CFCE002954E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		318410992AF4DC4A002954E7 /* secondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondDetailViewController.swift; sourceTree = "<group>"; };
 		3184109B2AF4DFEB002954E7 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		31DD54ED2AFABCD30034A742 /* tab3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab3VC.swift; sourceTree = "<group>"; };
+		31DD54EF2AFAC5D60034A742 /* tab4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab4VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				318410872AF4CFCC002954E7 /* SceneDelegate.swift */,
 				318410892AF4CFCC002954E7 /* ViewController.swift */,
 				3184108B2AF4CFCC002954E7 /* Main.storyboard */,
+				31DD54EF2AFAC5D60034A742 /* tab4VC.swift */,
+				31DD54ED2AFABCD30034A742 /* tab3VC.swift */,
 				318410992AF4DC4A002954E7 /* secondDetailViewController.swift */,
 				3184108E2AF4CFCE002954E7 /* Assets.xcassets */,
 				318410902AF4CFCE002954E7 /* LaunchScreen.storyboard */,
@@ -147,8 +153,10 @@
 			files = (
 				3184108A2AF4CFCC002954E7 /* ViewController.swift in Sources */,
 				318410862AF4CFCC002954E7 /* AppDelegate.swift in Sources */,
+				31DD54EE2AFABCD30034A742 /* tab3VC.swift in Sources */,
 				3184109A2AF4DC4A002954E7 /* secondDetailViewController.swift in Sources */,
 				318410882AF4CFCC002954E7 /* SceneDelegate.swift in Sources */,
+				31DD54F02AFAC5D60034A742 /* tab4VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

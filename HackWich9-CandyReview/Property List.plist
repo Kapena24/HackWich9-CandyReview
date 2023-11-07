@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CatagoryThreeImages</key>
+	<array>
+		<string>Jolly Ranchers</string>
+	</array>
+	<key>CategoryTwoImages</key>
+	<array>
+		<string>Gummy Bear</string>
+		<string>Sour  Gummies</string>
+	</array>
 	<key>CategoryOneImages</key>
 	<array>
 		<string>Reeses</string>
