@@ -4,15 +4,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     var candyArray = ["Reese's Peanut Butter Cup", "Kit Kat", "Butterfingers", "Chocolate & Nut M&M"]
     var ratingArray = ["⭐️⭐️⭐️⭐️⭐️", "⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️", "⭐️⭐️⭐️⭐️⭐️"]
+    
+   
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+   
+   
+    var categoryOneImagesData = [String]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Register the cell for the table view using a prototype cell from the storyboard
-      // tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        //tableView.delegate = self
+
+        if let path = Bundle.main.path(forResource: "PropertyList", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: path),
+           let categoryOneImages = dict.object(forKey: "CategoryOneImages") as? [String] {
+           
+            categoryOneImagesData = categoryOneImages
+        }
+
         //tableView.dataSource = self
+        //tableView.delegate = self
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,8 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-       
+      
     }
-
     
 }

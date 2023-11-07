@@ -17,12 +17,20 @@ class tab4VC: UIViewController, UITableViewDataSource, UITableViewDelegate{
   
     @IBOutlet weak var hardCandy: UIImageView!
     
+    var categoryThreeImagesData = [String]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Register the cell for the table view using a prototype cell from the storyboard
-        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-       // tableView.delegate = self
+
+        if let path = Bundle.main.path(forResource: "PropertyList", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: path),
+           let categoryThreeImages = dict.object(forKey: "CategoryThreeImages") as? [String] {
+           
+            categoryThreeImagesData = categoryThreeImages
+        }
+
         //tableView.dataSource = self
+        //tableView.delegate = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

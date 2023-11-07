@@ -15,13 +15,23 @@ class tab3VC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
    @IBOutlet weak var gummyBear: UIImageView!
         @IBOutlet weak var tableView: UITableView!
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            // Register the cell for the table view using a prototype cell from the storyboard
-          //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-       // tableView.delegate = self
-        // tableView.dataSource = self
+        
+    var categoryTwoImagesData = [String]()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        if let path = Bundle.main.path(forResource: "PropertyList", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: path),
+           let categoryTwoImages = dict.object(forKey: "CategoryTwoImages") as? [String] {
+           
+            categoryTwoImagesData = categoryTwoImages
         }
+
+        //tableView.dataSource = self
+        //tableView.delegate = self
+    }
+
 
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return candyArray.count
